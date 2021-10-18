@@ -18,7 +18,7 @@ VALUES ("CFO", 150000, 3),
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Maren", "Smith", 1, NULL), 
-("Matt", "Ramsey", 4, 1);
--- ("Kelsea", "Burk", 14, 10), 
--- ("Mackenzie", "East", 20, 10),
--- ("Mason", "Porter", 11, 2);
+("Matt", "Ramsey", 4, 2);
+("Kelsea", "Burk", 2, 1), 
+("Mackenzie", "East", 3, NULL),
+("Mason", "Porter", 5, 1);
