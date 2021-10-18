@@ -4,10 +4,12 @@
 
 See a short description of my project below.
 
+For this assignment I create a back end appliction that allows you to view or add to an employee database. See walk thru videio linked below for an example of how this works. 
+
 
 ## Installation Instructions
 
-Install inquirer, fs and jest.
+Install inquirer and MySQL2.
 
 ## Contribution Guidelines
 

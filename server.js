@@ -27,12 +27,12 @@ function askQuestions(){
     ]).then(({choice}) => {
         if(choice == "View Departments"){
             viewFunction("department")
-            // add onto the if statement with othet tabels that I added above 
         } else if(choice == "View Roles") {
             viewFunction("roles")
         } else if(choice == "View Employees") {
             viewFunction("employee")
         }
+        // add onto the if statement with othet tabels that I added above 
     })
 }
 
