@@ -20,15 +20,18 @@ function askQuestions(){
     inquirer.prompt([
         {
             type: "list",
-            message: "Please select from the list below?",
-            choices: ["View Departments", "View Roles", "View Employees", "Add Departemnt", "Add Role", "Add Empoyee"], 
-            // add other tables 
+            message: "What would you like to do?",
+            choices: ["View Departments", "View Roles", "View Employees", "Add Departemnt", "Add Role", "Add Empoyee", "Quit"], 
             name: "choice"
         }
     ]).then(({choice}) => {
         if(choice == "View Departments"){
             viewFunction("department")
             // add onto the if statement with othet tabels that I added above 
+        } else if(choice == "View Roles") {
+            viewFunction("roles")
+        } else if(choice == "View Employees") {
+            viewFunction("employee")
         }
     })
 }
