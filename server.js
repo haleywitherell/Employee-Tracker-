@@ -20,8 +20,8 @@ function askQuestions(){
     inquirer.prompt([
         {
             type: "list",
-            message: "WHAT U WANT?",
-            choices: ["View Departments"],
+            message: "Please select from the list below?",
+            choices: ["View Departments", "View Roles", "View Employees", "Add Departemnt", "Add Role", "Add Empoyee"], 
             // add other tables 
             name: "choice"
         }
