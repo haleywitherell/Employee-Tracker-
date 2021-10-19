@@ -1,5 +1,7 @@
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
+const { allowedNodeEnvironmentFlags } = require('process');
+const Connection = require('mysql2/typings/mysql/lib/Connection');
 // const Connection = require('mysql2/typings/mysql/lib/Connection');
 
 const db = mysql.createConnection({
@@ -21,7 +23,7 @@ function askQuestions(){
         {
             type: "list",
             message: "What would you like to do?",
-            choices: ["View Departments", "View Roles", "View Employees", "Add Departemnt", "Add Role", "Add Empoyee", "Quit"], 
+            choices: ["View Departments", "View Roles", "View Employees", "Add Departemnt", "Add Role", "Add Employee", "Quit"], 
             name: "choice"
         }
     ]).then(({choice}) => {
@@ -31,7 +33,17 @@ function askQuestions(){
             viewFunction("roles")
         } else if(choice == "View Employees") {
             viewFunction("employee")
-        }
+        } else if(choice == "Add Departemnt") {
+            addDepartment()
+        } else if(choice == "Add Role") {
+            addRole()
+        } else if(choice == "Add Employee") {
+            addEmployee()
+        } else {
+            connection.end()
+        }; 
+            
+        
         // add onto the if statement with othet tabels that I added above 
     })
 }
@@ -49,4 +61,10 @@ function viewFunction(table){
 
         askQuestions()
     })
+}
+
+
+// create functions for query 21 and 22
+function addDepartment(table){
+
 }
