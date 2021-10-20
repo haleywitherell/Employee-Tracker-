@@ -72,7 +72,7 @@ function addDepartment(){
             
         },
     ]) .then((data) => {
-        db.query(`INSERT INTO department(name) VALUES( ? )`, data.department)
+        db.query(`INSERT INTO department (department_name) VALUES (?)`, data.department_name)
 
         askQuestions();
     })
@@ -101,7 +101,7 @@ function addRole(){
             
         },
     ]) .then((data) => {
-        db.query(`INSERT INTO roles VALUES ?`, data.roles)
+        db.query(`INSERT INTO roles VALUES (?)`, data.roles)
 
         askQuestions();
     })
@@ -136,7 +136,7 @@ function addEmployee(){
             
         },
     ]) .then((data) => {
-        db.query(`INSERT INTO roles VALUES ?`, data.roles)
+        db.query(`INSERT INTO employee VALUES (?)`, data.employee)
 
         askQuestions();
     })
