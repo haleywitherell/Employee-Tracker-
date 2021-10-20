@@ -39,7 +39,7 @@ function askQuestions(){
         } else if(choice == "Add Employee") {
             addEmployee()
         } else if(choice == "Quit") {
-            connection.end()
+            process.exit()
         }; 
        
     })
