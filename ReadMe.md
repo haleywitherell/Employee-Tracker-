@@ -24,6 +24,8 @@ Click the link below to see the walk thru video for this project.
 
 https://drive.google.com/file/d/1nMMxnHZ1h3o-qSuS09YZS4-UnXJ_O8wV/view
 
+* you may need to download the video after following the Google drive link
+
 
 ## Questions
 
